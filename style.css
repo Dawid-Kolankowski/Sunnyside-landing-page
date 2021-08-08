@@ -318,7 +318,7 @@ html {
   font-size: 2rem;
   letter-spacing: 2px;
   font-weight: 700;
-  color: #818498;
+  color: #818398;
 }
 
 @media screen and (max-width: 768px) {
@@ -488,7 +488,7 @@ html {
 .features__text__description {
   font-size: 1.8rem;
   max-width: 32.7rem;
-  color: #818498;
+  color: #818398;
   padding-bottom: 3.2rem;
 }
 
@@ -629,5 +629,36 @@ html {
 .testimonials__position {
   color: #a7abae;
   font-size: 1.4rem;
+}
+
+.photos {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .photos {
+    flex-direction: row;
+  }
+}
+
+.photos__group {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .photos__group {
+    width: 50%;
+  }
+}
+
+.photos__group img {
+  width: 100%;
+}
+
+.photos__group picture {
+  font-size: 0;
 }
 /*# sourceMappingURL=style.css.map */

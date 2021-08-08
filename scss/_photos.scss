@@ -1,0 +1,22 @@
+.photos {
+  display: flex;
+  flex-direction: column;
+  @media screen and (min-width: $screen-tablet) {
+    flex-direction: row;
+  }
+  &__group {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    @media screen and (min-width: $screen-tablet) {
+      width: 50%;
+    }
+
+    img {
+      width: 100%;
+    }
+    picture {
+      font-size: 0;
+    }
+  }
+}
