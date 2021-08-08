@@ -1,0 +1,150 @@
+.features {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+
+  &__item {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+
+    &__image {
+      width: 100%;
+      position: relative;
+    }
+
+    @media (min-width: $screen-tablet) {
+      flex-direction: row;
+    }
+
+    &--reverse {
+      @media (min-width: $screen-tablet) {
+        flex-direction: row-reverse;
+      }
+    }
+  }
+
+  &__text {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    &__onimage {
+      position: absolute;
+      bottom: 0;
+      text-align: center;
+      width: 100%;
+      margin-bottom: 6rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      &--blue {
+        & > h2,
+        > p {
+          color: $color-cark-blue;
+        }
+      }
+
+      &--cyan {
+        & > h2,
+        > p {
+          color: $color-dark-desaturated-cyan;
+        }
+      }
+    }
+
+    &--container {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 6.4rem 3.2rem;
+
+      @media (min-width: $screen-tablet) {
+        align-items: flex-start;
+        text-align: start;
+        padding: 0;
+      }
+    }
+
+    @media (min-width: $screen-tablet) {
+      text-align: left;
+    }
+
+    &__header {
+      font-family: 'Fraunces', serif;
+      font-size: 3.2rem;
+      color: $color-very-dark-desaturated-blue;
+      margin-bottom: 2.4rem;
+      max-width: 32.5rem;
+      @media (min-width: $screen-tablet) {
+        font-size: 4rem;
+      }
+
+      &--image {
+        max-width: 100%;
+        margin-bottom: 2.7rem;
+      }
+    }
+
+    &__description {
+      font-size: 1.8rem;
+      max-width: 32.7rem;
+      color: $color-dark-grayish-blue;
+      padding-bottom: 3.2rem;
+
+      &--image {
+        padding-bottom: 0;
+        max-width: 37.7rem;
+      }
+    }
+
+    &__link {
+      font-family: 'Fraunces', serif;
+      font-size: 1.5rem;
+      color: $color-very-dark-desaturated-blue;
+      position: relative;
+      &:after {
+        content: '';
+        height: 1rem;
+        border-radius: 0.5rem;
+        width: 110%;
+        position: absolute;
+        left: -0.6rem;
+        bottom: -0.3rem;
+        background-color: $color-yellow;
+        z-index: -1;
+        opacity: 0.3;
+      }
+      &:hover {
+        cursor: pointer;
+        &:after {
+          opacity: 1;
+        }
+      }
+      &--red {
+        &:after {
+          background-color: $color-soft-red;
+        }
+      }
+    }
+  }
+
+  &__image {
+    width: 100%;
+    display: flex;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+
+    &__text {
+      position: absolute;
+      bottom: 0;
+    }
+  }
+}
