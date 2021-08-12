@@ -1,6 +1,6 @@
 .hero {
   height: 53.8rem;
-  background-image: url('/images/mobile/image-header.jpg');
+  background-image: url('images/mobile/image-header.jpg');
   background-size: cover;
   background-position: center;
   display: flex;
@@ -9,7 +9,7 @@
 
   @media (min-width: $screen-phone) {
     height: 80rem;
-    background-image: url('/images/desktop/image-header.jpg');
+    background-image: url('images/desktop/image-header.jpg');
   }
 
   &__title {

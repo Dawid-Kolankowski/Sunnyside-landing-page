@@ -334,7 +334,7 @@ html {
 
 .hero {
   height: 53.8rem;
-  background-image: url("/images/mobile/image-header.jpg");
+  background-image: url("images/mobile/image-header.jpg");
   background-size: cover;
   background-position: center;
   display: flex;
@@ -345,7 +345,7 @@ html {
 @media (min-width: 500px) {
   .hero {
     height: 80rem;
-    background-image: url("/images/desktop/image-header.jpg");
+    background-image: url("images/desktop/image-header.jpg");
   }
 }
 
@@ -659,7 +659,8 @@ html {
 }
 
 .photos__group picture {
-  font-size: 0;
+  width: 50%;
+  display: flex;
 }
 
 .footer {
